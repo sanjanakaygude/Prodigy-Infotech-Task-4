@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Web Developer Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Container for content */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Hero Section (Header) */
+        .hero {
+            background-color: #3498db;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+
+        /* About Me Section */
+        #about {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 1.2em;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        #skills h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        #projects h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .projects-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            width: 300px;
+            margin: 20px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .project a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project a:hover {
+            color: #f39c12;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        #contact h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section (Home) -->
+<section class="hero" id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Your go-to web developer</p>
+    <img src="your-photo.jpg" alt="Your Photo">
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate web developer with a focus on front-end development. I have a strong foundation in HTML, CSS, JavaScript, and various web technologies. I love building beautiful, responsive websites that provide a great user experience. I am always learning new things and excited to take on new challenges!</p>
+    <p>Education: Bachelor’s degree in Computer Science from XYZ University.</p>
+    <p>Experience: 3+ years working as a web developer, building websites for clients and contributing to open-source projects.</p>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Git</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Web Performance</div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-list">
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A full-stack web application that allows users to track their tasks.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A portfolio website built using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>An e-commerce website with a shopping cart feature and user authentication.</p>
+            <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+        <form action="submit-form.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
